@@ -1,0 +1,63 @@
+*{ 
+    /* text-align: center; */
+    margin: auto;
+    box-sizing: border-box;
+   }
+  body {
+    /* margin: 0; */
+    /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale; */
+    background-image : url('https://cdn.slashgear.com/wp-content/uploads/2020/04/star-wars-backgrounds-25.jpg');
+  }
+
+  .hero-image {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  .hero-inside {
+  text-align: right;
+  position: absolute;
+  top: 7%;
+    left: 89%;
+  transform: translate(-50%, -50%);
+  }
+.studentImage {
+    position: absolute;
+    /* text-align: center; */
+    width: 10rem;
+    height: 10rem;
+    /* border: 5px  solid  black; */
+    border-radius: 50%;
+    margin-top: -8rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* .edit {
+    margin-top: -10rem ;
+} */
+/* .fa-edit { */
+    /* float: right ; */
+    /* margin-top: -10rem; */
+/* } */
+
+.align{
+    margin-top: 3rem;
+    text-align: center;
+    position: absolute;
+}
+
+.links{
+    margin-top: 5rem;
+    text-align: center;
+    
+}
+
+i{
+    margin: 1rem;
+    color: rgb(124, 55, 29);
+}

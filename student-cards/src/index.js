@@ -1,11 +1,23 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-// import Data from './Data';
-import Students from './Data';
+// import './index.css';
+import App from './components/Card';
+import {Data} from './Data';
 import reportWebVitals from './reportWebVitals';
+import {  Container , Row , Col} from 'react-bootstrap';
 
+
+function Students() {
+  return (
+    <Container className='mt-4'>
+      <Row >
+      {
+      Data.map(item => <App image={item.image} text={item.text} studentImage={item.studentImage} linkedin={item.linkedin} facebook={item.facebook} gitHub={item.gitHub} />)
+      }
+      </Row>
+    </Container>
+  )
+}
 
 
 ReactDOM.render(
