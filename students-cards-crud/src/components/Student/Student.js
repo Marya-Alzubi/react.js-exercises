@@ -65,16 +65,16 @@ class Student extends Component {
         });
         console.log(studentIndex); //checkup //have the correct id
         const student = {
-            ...this.state.students[studentIndex]
+            ...this.state.students[studentIndex]     // spread
         };
-        console.log(student); // checkup it should be a single record (single object)
-        // const person = Object.assign({}, this.state.persons[personIndex]);
+        console.log(student); // checkup, it should be a single record (single object)
+        // const person = Object.assign({}, this.state.persons[personIndex]); // it is work but not modern
 
         student.text = event.target.value;
         console.log(student.text); //input checkup
-        const students = [...this.state.students];
+        const students = [...this.state.students];    // spread
         students[studentIndex] = student;
-        console.log(students); // checkup it should be an array with the update
+        console.log(students); // checkup it should be an array with the new update
         this.setState( {students: students} );
     }
 
