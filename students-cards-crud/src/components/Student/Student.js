@@ -146,9 +146,9 @@ class Student extends Component {
             <Container className='mt-4'>
             {/*    { this.state.showNickNameButton*/}
             {/*        ?*/}
-                <Button style={{display:"block"}} onClick={this.toggleNickNameHandler} id='nickName' variant="outline-secondary">nick name </Button>
+                <Button className='m-2' style={{display:"block"}} onClick={this.toggleNickNameHandler} id='nickName' variant="secondary">nick name </Button>
             {/*        :*/}
-                <Button style={{display:"none"}} onClick={this.toggleNickNameHandler} id='oldName' variant="outline-secondary">old name </Button>
+                <Button className='m-2' style={{display:"none"}} onClick={this.toggleNickNameHandler} id='oldName' variant="warning">old name </Button>
             {/*}*/}
                 <Row>
                     {this.state.students.map((student, index) => {

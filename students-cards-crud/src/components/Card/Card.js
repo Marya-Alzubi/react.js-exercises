@@ -4,18 +4,18 @@ import { Card ,Button , Col } from 'react-bootstrap';
 
 function CardComp(props) {
   return (
-    <Col xs={4} className='mb-4' >
-  <Card style={{ width: '18rem' }}>
+    <Col xl={4} lg={4} md={6} sm={12}  xs={12}     className='mb-4' >
+  <Card style={{ width: '18rem', height:'25rem' }}>
   <div>
     <Card.Img className="hero-image" variant="top" src={props.image} />
     <div className="hero-inside">
       {/* <img className='studentImage' src={props.studentImage} /> */}
-      <button onClick={props.delete} ><i className="edit far fa-edit"></i></button>
+      <button onClick={props.delete} ><i className="fas fa-trash-alt"></i></button>
     </div>
   </div>
  
-  <Card.Body className='mt-4'>
-  <img className='studentImage' src={props.studentImage} />
+  <Card.Body className='cardBody mt-4'>
+  <img className='studentImage hero-inside2' src={props.studentImage} />
     <Card.Title className='align'>{props.text}</Card.Title>
     <input type="text" onChange={props.change} />
     {/*<Button style={{display:"block"}} onClick={props.nickName} id='nickName' variant="outline-secondary">nick name </Button>*/}
